@@ -1,11 +1,7 @@
-import Vue from 'vue'
+import Vue from "vue";
 
-import {
-    Dropdown,
-    DropdownMenu,
-    DropdownItem,
-} from 'element-ui'
+import { Dropdown, DropdownMenu, DropdownItem } from "element-ui";
 
-Vue.use(Dropdown)
-Vue.use(DropdownMenu)
-Vue.use(DropdownItem)
+Vue.use(Dropdown);
+Vue.use(DropdownMenu);
+Vue.use(DropdownItem);
