@@ -12,4 +12,12 @@
   text-align: center;
   color: #2c3e50;
 }
+html,
+body {
+  padding: unset;
+  margin: unset;
+  min-height: 668px;
+  min-width: 1366px;
+  background-color: #ccc;
+}
 </style>
