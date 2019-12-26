@@ -1,0 +1,36 @@
+openapi: 3.0.0
+info:
+  description: Mock
+  version: 1.0.0
+  title: Api
+servers:
+  - url: /mock-api/v1
+tags:
+  - name: User
+    description: Feedback Apis
+paths:
+  /user:
+    get:
+      tags:
+        - company
+      summary: get company list data
+      description: return company list data
+      operationId: getCompanyData
+      security:
+        - AccessTokenAuth: []
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: integer
+                    format: int32
+                  res:
+                    type: object
+                    properties:
+                      companyDataList:
+                        type: array
