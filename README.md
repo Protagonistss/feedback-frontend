@@ -1,6 +1,6 @@
 # feedback-frontend
 
-## mock
+## Mock server
 
 ```
 npm run mock
@@ -10,6 +10,26 @@ npm run mock
 
 ```
 http://localhost:9802/static/index.html
+```
+
+## Docker server
+
+### 构造镜像
+
+```
+    docker build -t [镜像名] .
+```
+
+### 启动容器
+
+```
+    docker run -idt -p 9200:9000 --name=dacontainer [镜像id或者镜像名称]
+```
+
+### Docker-Compose management docker
+
+```
+    docker-compose up -d
 ```
 
 ## Project setup
@@ -22,6 +42,13 @@ npm install
 
 ```
 npm run serve
+```
+
+### Concurrently Compiles and hot-reloads for development and setup mock swagger server
+
+```
+npm run serve:devmock
+
 ```
 
 ### Compiles and minifies for production
@@ -45,3 +72,4 @@ npm run lint
 ### Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
+Author[Email Address](https://protagonisths@gmail.com)
