@@ -17,19 +17,19 @@ http://localhost:9802/static/index.html
 ### 构造镜像
 
 ```
-    docker build -t [镜像名] .
+docker build -t [镜像名] .
 ```
 
 ### 启动容器
 
 ```
-    docker run -idt -p 9200:9000 --name=dacontainer [镜像id或者镜像名称]
+docker run -idt -p 9200:9000 --name=dacontainer [镜像id或者镜像名称]
 ```
 
 ### Docker-Compose management docker
 
 ```
-    docker-compose up -d
+docker-compose up -d
 ```
 
 ## Project setup
@@ -48,7 +48,6 @@ npm run serve
 
 ```
 npm run serve:devmock
-
 ```
 
 ### Compiles and minifies for production
