@@ -1,4 +1,4 @@
-openapi: 3.0.0
+openapi: 3.0.1
 info:
   title: Swagger Apis
   description: This is a sample server Mock server. You can find response of some api at here
@@ -32,9 +32,17 @@ paths:
           content:
             application/json:
               schema:
+                # $ref: "#/components/schemas/User"
                 type: object
-                err:
-                  type: integer
-                  format: int64
-                users:
-                  type: object
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        err:
+          type: integer
+          format: int64
+          default: 200
+        users:
+          type: array
+          default: []
