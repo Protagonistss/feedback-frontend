@@ -1,21 +1,29 @@
 openapi: 3.0.0
 info:
-  description: Mock
+  title: Swagger Apis
+  description: This is a sample server Mock server. You can find response of some api at here
+  contact:
+    email: protagonisths@gmail.com
+  license:
+    name: Apache 2.0
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
   version: 1.0.0
-  title: Api
+externalDocs:
+  description: Find out more about Swagger
+  url: "http://swagger.io"
 servers:
   - url: /mock-api/v1
 tags:
-  - name: User
-    description: Feedback Apis
+  - name: user
+    description: about user apis
 paths:
   /user:
     get:
       tags:
-        - company
-      summary: get company list data
-      description: return company list data
-      operationId: getCompanyData
+        - user
+      summary: get users data
+      description: return users data
+      operationId: getUsers
       security:
         - AccessTokenAuth: []
       responses:
@@ -25,12 +33,8 @@ paths:
             application/json:
               schema:
                 type: object
-                properties:
-                  code:
-                    type: integer
-                    format: int32
-                  res:
-                    type: object
-                    properties:
-                      companyDataList:
-                        type: array
+                err:
+                  type: integer
+                  format: int64
+                users:
+                  type: object

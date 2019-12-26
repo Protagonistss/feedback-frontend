@@ -4,7 +4,6 @@
 
 ```
 npm run mock
-
 ```
 
 ## Swagger
