@@ -72,4 +72,7 @@ npm run lint
 ### Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
-Author[Email Address](https://protagonisths@gmail.com)
+
+Author[Email Address]
+
+> protagonisths@gmail.com
