@@ -47,7 +47,7 @@ npm run serve
 ### Concurrently Compiles and hot-reloads for development and setup mock swagger server
 
 ```
-npm run serve:devmock
+npm run serve:mock
 ```
 
 ### Compiles and minifies for production
